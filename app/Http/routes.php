@@ -13,8 +13,11 @@
 
 
 
+
 Route::get('/', function () {
-    \Debugbar::error('Something is definitely going wrong.');
+
+    $url = url('foo');
+    \Debugbar::error($url);
     return view('welcome');
 });
 
