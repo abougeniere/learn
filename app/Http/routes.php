@@ -24,3 +24,8 @@ Route::get('/', function () {
 Route::get('/test', function () {
     return view('test.welcome');
 });
+
+
+Route::get('user/{id}', function ($id) {
+    return 'User '.$id;
+});
