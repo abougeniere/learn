@@ -22,5 +22,5 @@ Route::get('/', function () {
 });
 
 Route::get('/test', function () {
-    return ('!*test*!');
+    return view('test.welcome');
 });
