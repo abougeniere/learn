@@ -12,7 +12,9 @@
 */
 
 
+get('users', 'UsersController@getInfos');
 
+post('users', 'UsersController@postInfos');
 
 Route::get('/', function () {
 
